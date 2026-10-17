@@ -11,7 +11,8 @@ python-practice/
 │   ├── basics_practice.py
 │   ├── data_structures_practice.py
 │   ├── functions_practice.py
-│   └── LIST.py
+│   ├── LIST.py
+│   └── student_marks_analyzer.py
 ├── DAY-2/
 │   ├── Data-analysis.ipynb
 │   └── titanic.csv
@@ -27,14 +28,45 @@ python-practice/
 | `LIST.py` | List indexing, slicing, `append`, `insert`, `extend`, `remove`, `pop`, `sort`, `sorted`, list comprehension |
 | `data_structures_practice.py` | Lists, tuples, sets, and dictionaries |
 | `functions_practice.py` | Functions with `def` and `return`, default parameters, keyword arguments |
-| `student_marks_analyzer.py` | Student Marks Analyzer extended with `max()` and `min()` |
+| `student_marks_analyzer.py` | Mini-project: Student Marks Analyzer extended with `max()` and `min()` to show the highest and lowest marks |
+
+### Student Marks Analyzer
+
+The analyzer calculates the total and average of a list of marks, prints a result category, and shows the highest and lowest marks.
+
+```python
+student_marks = [40, 80, 90, 100, 50]
+analyze(student_marks)
+```
+
+**Sample output:**
+
+```
+Normal
+40
+80
+90
+100
+50
+Total: 360
+Average: 72.0
+Highest: 100
+Lowest: 40
+```
+
+Changes made to the original version:
+
+- Added `max()` and `min()` to display the highest and lowest marks
+- Fixed the loop (`range(0,4)` skipped the last mark) by looping over the list directly
+- Added a check for an empty list, so the program doesn't crash
+
 ## Day 2: NumPy, Pandas and Titanic Dataset
 
-`Data-analysis.ipynb` covers:
+`DAY-2/Data-analysis.ipynb` covers:
 
 - **NumPy:** `np.array`, `sum`, `mean`, `max`, element-wise operations
 - **Pandas:** `read_csv`, `head`, `tail`, `shape`, `columns`, `info`, `describe`, `isnull().sum()`, `value_counts`, `loc`, `iloc`
-- **Custom Titanic questions**
+- **Custom Titanic questions** (below)
 
 ### Custom Questions and Findings
 
@@ -85,6 +117,7 @@ pip install numpy pandas jupyter
 
 ```bash
 python DAY-1/strings_practice.py
+python DAY-1/student_marks_analyzer.py
 ```
 
 **4. Open the Day 2 notebook**
@@ -102,6 +135,7 @@ Open `DAY-2/Data-analysis.ipynb` in VS Code or Jupyter, then click **Run All**. 
 
 ## Author
 
-**GitHub:** [taqekhanzakinoor-debug](https://github.com/taqekhanzakinoor-debug)
+**Alauddin**
+GitHub: [taqekhanzakinoor-debug](https://github.com/taqekhanzakinoor-debug)
 
-Python to AI Bootcamp, GDG CUI Wah.
+Python to AI Bootcamp, Google Developer Groups (GDG) CUI Wah.
