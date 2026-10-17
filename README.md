@@ -27,7 +27,7 @@ python-practice/
 | `LIST.py` | List indexing, slicing, `append`, `insert`, `extend`, `remove`, `pop`, `sort`, `sorted`, list comprehension |
 | `data_structures_practice.py` | Lists, tuples, sets, and dictionaries |
 | `functions_practice.py` | Functions with `def` and `return`, default parameters, keyword arguments |
-
+| `student_marks_analyzer.py` | Student Marks Analyzer extended with `max()` and `min()` |
 ## Day 2: NumPy, Pandas and Titanic Dataset
 
 `Data-analysis.ipynb` covers:
